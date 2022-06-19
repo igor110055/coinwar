@@ -15,99 +15,69 @@
 <body>
     <div class="container" style="width: 100%; padding: 0">
         <nav class="navbar navbar-inverse" role="navigation">
+            <!-- Header -->
+            <div class="col-md-6 col-md-offset-1">
+                <h2 class="visible-xs xs-stats">
+                    EXCHANGE : <a type="button" class="btn btn-default" data-toggle="modal" href="#modal-cities"><i
+                            class=""></i>
+                        <span class="city"></span></a>
+                    <br />
+                    YEAR : 202<span class="day"></span>
+                    <br />
+                    DAI : $<span class="cash"></span>
+                </h2>
 
-            <!-- Small Width Menu -->
-            <div class="navbar-header">
-                <span class="navbar-brand visible-xs xs-stats"><span class="city"></span><span class=""></span><span
-                        class=""></span></span>
-                <div class="btn-group navbar-move visible-xs">
-                    <a type="button" class="btn btn-default" data-toggle="modal" href="#modal-cities"><i class=""></i>
-                        <span data-l10n-id="move"></span></a>
-                    </button>
-                </div>
-            </div>
+                <h2 class="hidden-xs xs-stats">
+                    EXCHANGE : <a type="button" class="btn btn-default" data-toggle="modal" href="#modal-cities"><i
+                            class=""></i>
+                        <span class="city"></span></a>
+                    <br />
+                    YEAR : 202<span class="day"></span>
+                    <br />
+                    DAI : $<span class="cash"></span>
+                </h2>
 
-            <!-- Mid and Wide Width Menu -->
-            <div class="collapse navbar-collapse">
-                <ul class="nav navbar-nav">
-                    <li class="dropdown">
-                    <li class="hidden-xs"><a data-toggle="modal" href="#modal-cities"><i class=""></i> <span
-                                data-l10n-id="move"></span></a></li>
-                    <li><a data-toggle="modal" href="#modal-pawn-shop"><i class=""></i>
-                            <span data-l10n-id="pawn-shop"></span></a></li>
-                    <li><a href="#modal-about" data-toggle="modal" data-l10n-id="about"></a></li>
-                    <ul class="dropdown-menu">
-                    </ul>
-                    </li>
-                </ul>
+                <!-- Assets -->
+                <table class="table table-condensed drugs">
+                    <tbody>
+                        <tr>
+                            <th><span data-l10n-id="item"></span></th>
+                            <th class="text-center"><span data-l10n-id="stock"></span></th>
+                            <th class="text-center"><span data-l10n-id="value"></span></th>
+                            <th class="text-center"><i class=""></i></th>
+                            <th class="text-center"><i class=""></i></th>
+                        </tr>
+                        <tr data-drug="0">
+                            <td></td>
+                            <td class="text-center"></td>
+                            <td class="text-center"></td>
+                            <!-- Wide: Buy -->
+                            <td class="hidden-xs">
+                                <button data-toggle="modal" class="btn buy-xs" href="#modal-transaction">
+                                    <span data-l10n-id="buy"></span>
+                                </button>
+                            </td>
+                            <!-- Wide: Sell -->
+                            <td class="hidden-xs">
+                                <button data-toggle="modal" class="btn sell-xs" href="#modal-transaction">
+                                    <span data-l10n-id="sell"></span>
+                                </button>
+                            </td>
+                            <td class="visible-xs">
+                                <button data-toggle="modal" class="btn buy-xs" href="#modal-transaction">
+                                    <span data-l10n-id="buy"></span>
+                                </button>
+                            </td>
+                            <td class="visible-xs">
+                                <button data-toggle="modal" class="btn sell-xs" href="#modal-transaction">
+                                    <span data-l10n-id="sell"></span>
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </nav>
-
-        <!-- Stats -->
-        <div class="col-md-12 stats hidden-xs">
-            <div class="col-md-3 col-xs-4">
-                <i class=""></i> <span>Exchange : </span><span class="city"></span><br />
-                <i class=""></i> <span data-l10n-id="day"></span> : 202<span class="day"></span>
-            </div>
-            <div class="col-md-3 col-xs-4">
-                <i class=""></i> <span data-l10n-id="stock"></span> : <span class="used_space"></span><br />
-                <i class=""></i> <span data-l10n-id="cash"></span> : $<span class="cash"></span><br />
-                <i class=""></i> <span data-l10n-id="guns"></span> : <span class="guns"></span>
-            </div>
-            <div class="col-md-3">
-                <i class=""></i> <span data-l10n-id="bank-account"></span> : $<span class="bank_deposit"></span><br />
-                <i class=""></i> <span data-l10n-id="debt"></span> : $<span class="debt"></span><br />
-                <i class=""></i> <span data-l10n-id="health"></span> : <span class="health"></span>
-            </div>
-            <div class="col-md-3 hidden-xs">
-            </div>
-        </div>
-
-        <!-- Drugs -->
-        <div class="col-md-6 col-md-offset-1">
-            <h2 class="visible-xs xs-stats">Year : 202<span class="day"></span><br />DAI : $<span class="cash"></span>
-            </h2>
-            <h2 class="hidden-xs"><span data-l10n-id="drugs"></span></h2>
-            <table class="table table-condensed drugs">
-                <tbody>
-                    <tr>
-                        <th><span data-l10n-id="item"></span></th>
-                        <th class="text-center"><span data-l10n-id="stock"></span></th>
-                        <th class="text-center"><span data-l10n-id="value"></span></th>
-                        <th class="text-center"><i class=""></i></th>
-                        <th class="text-center"><i class=""></i></th>
-                    </tr>
-                    <tr data-drug="0">
-                        <td></td>
-                        <td class="text-center"></td>
-                        <td class="text-center"></td>
-                        <!-- Wide: Buy -->
-                        <td class="hidden-xs">
-                            <button data-toggle="modal" class="btn buy-xs" href="#modal-transaction">
-                                <span data-l10n-id="buy"></span>
-                            </button>
-                        </td>
-                        <!-- Wide: Sell -->
-                        <td class="hidden-xs">
-                            <button data-toggle="modal" class="btn sell-xs" href="#modal-transaction">
-                                <span data-l10n-id="sell"></span>
-                            </button>
-                        </td>
-                        <td class="visible-xs">
-                            <button data-toggle="modal" class="btn buy-xs" href="#modal-transaction">
-                                <span data-l10n-id="buy"></span>
-                            </button>
-                        </td>
-                        <td class="visible-xs">
-                            <button data-toggle="modal" class="btn sell-xs" href="#modal-transaction">
-                                <span data-l10n-id="sell"></span>
-                            </button>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-
         <!-- News 
         <div class="col-md-4 news visible-xs">
             <ul>
