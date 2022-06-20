@@ -79,30 +79,26 @@
                         <th class="text-center"><span data-l10n-id="stock"></span></th>
                         <th class="text-center"><span data-l10n-id="value"></span></th>
                         <th class="text-center"><i class=""></i></th>
-                        <th class="text-center"><i class=""></i></th>
                     </tr>
                     <tr data-drug="0">
                         <td></td>
                         <td class="text-center"></td>
                         <td class="text-center"></td>
-                        <!-- Wide: Buy -->
+                        <!-- Wide -->
                         <td class="hidden-xs">
                             <button data-toggle="modal" class="btn buy-xs" href="#modal-transaction">
                                 <span data-l10n-id="buy"></span>
                             </button>
-                        </td>
-                        <!-- Wide: Sell -->
-                        <td class="hidden-xs">
                             <button data-toggle="modal" class="btn sell-xs" href="#modal-transaction">
                                 <span data-l10n-id="sell"></span>
                             </button>
                         </td>
+                        <!-- Narrow -->
                         <td class="visible-xs">
                             <button data-toggle="modal" class="btn buy-xs" href="#modal-transaction">
                                 <span data-l10n-id="buy"></span>
                             </button>
-                        </td>
-                        <td class="visible-xs">
+
                             <button data-toggle="modal" class="btn sell-xs" href="#modal-transaction">
                                 <span data-l10n-id="sell"></span>
                             </button>
@@ -110,75 +106,20 @@
                     </tr>
                 </tbody>
             </table>
-        </div>
-
-    </div>
-
-    <!-- Modals (Lightboxes) -->
-    <!-- Modal : Cities -->
-    <div class="modal fade" id="modal-cities" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <h4 class="modal-title" data-l10n-id="choose-city"></h4>
-                </div>
-                <div class="modal-body cities">
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn" data-dismiss="modal" data-l10n-id="close">
-                    </button>
-                </div>
+            <!--
+            <div class="col-md-4 news visible-xs">
+                <ul>
+                </ul>
             </div>
+            <div class="col-md-4 news hidden-xs">
+                <h2><span data-l10n-id="news"></span></h2>
+                <ul class="readmore">
+                </ul>
+            </div>
+        -->
         </div>
     </div>
 
-    <!-- Modal : Inventory -->
-    <div class="modal fade" id="modal-inventory" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <h4 class="modal-title"><span data-l10n-id="inventory"></span></h4>
-                </div>
-                <div class="modal-body">
-                    <table class="table table-condensed">
-                        <tbody>
-                            <tr>
-                                <th><span data-l10n-id="item"></span></th>
-                                <th class="text-center hidden-xs"><span data-l10n-id="stock"></span></th>
-                                <th><span class="visible-xs"><span data-l10n-id="stock"></span></span></th>
-                                <th class="text-center"><span data-l10n-id="action"></span></th>
-                            </tr>
-                            <tr class="template hidden">
-                                <td></td>
-                                <td class="text-center hidden-xs"></td>
-                                <td class="form-group">
-                                    <label class="input-group" style="width: 100%;">
-                                        <input type="number" min="0" value="0" class="form-control" />
-                                        <span class="input-group-btn hidden-xs">
-                                            <button class="btn max" type="button" data-l10n-id="max"></button>
-                                        </span>
-                                    </label>
-                                </td>
-                                <td class="text-center form-group">
-                                    <span class="input-group-btn">
-                                        <button class="btn consume"><i class="glyphicon glyphicon-cutlery"></i></button>
-                                        <button class="btn drop"><i class="glyphicon glyphicon-hand-down"></i></button>
-                                    </span>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <p></p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn" data-dismiss="modal" data-l10n-id="close">
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
     <!-- Modal : Transaction -->
     <div class="modal fade" id="modal-transaction" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog">
@@ -190,7 +131,6 @@
                 <div class="modal-body row">
                     <div class="col-md-6 col-xs-12">
                         <label class="form-group">
-                            How much ?
                             <div class="input-group">
                                 <input type="number" min="0" value="0" class="form-control" />
                                 <span class="input-group-btn">
@@ -210,6 +150,25 @@
             </div>
         </div>
     </div>
+
+    <!-- Modal : Exchange -->
+    <div class="modal fade" id="modal-cities" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" data-l10n-id="choose-city"></h4>
+                </div>
+                <div class="modal-body cities">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn" data-dismiss="modal" data-l10n-id="close">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Modal : About -->
     <div class="modal fade" id="modal-about" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog">
@@ -220,7 +179,6 @@
                 </div>
                 <div class="modal-body">
                     <p data-l10n-id="about-text"></p>
-
                     <p>
                         <a href="https://en.wikipedia.org/wiki/Drug_Wars_(video_game)"
                             data-l10n-id="about-attribution"></a><br />
@@ -235,26 +193,7 @@
             </div>
         </div>
     </div>
-    <!-- Modal : Scoreboard -->
-    <div class="modal fade" id="modal-high-score" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <h4 class="modal-title" data-l10n-id="high-score"></h4>
-                </div>
-                <div class="modal-body">
-                    <ul>
-                    </ul>
-                    <p><span class="final-score"></span> <span class="message"></span></p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn" data-dismiss="modal" data-l10n-id="close">
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
+
     <script src="assets/js/jquery-1.11.0.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/readmore.min.js"></script>
