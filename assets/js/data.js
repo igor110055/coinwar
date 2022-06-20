@@ -2,42 +2,42 @@ var DataCenter = {
     drugs: [
         {
             "name": "acid",
-            "minimum_price": 500,
-            "maximum_price": 1000,
+            "minimum_price": 5000,
+            "maximum_price": 69000,
             "cheap": {
-                "minimum_price": 100,
-                "maximum_price": 400,
+                "minimum_price": 5000,
+                "maximum_price": 69000,
             },
             "expensive": {
-                "minimum_price": 2000,
-                "maximum_price": 5000,
+                "minimum_price": 5000,
+                "maximum_price": 69000,
             }
         },
         {
             "name": "cocaine",
-            "minimum_price": 400,
-            "maximum_price": 1000,
+            "minimum_price": 100,
+            "maximum_price": 5000,
             "expensive": {
-                "minimum_price": 5000,
-                "maximum_price": 10000,
+                "minimum_price": 100,
+                "maximum_price": 5000,
             }
         },
         {
             "name": "hash",
-            "minimum_price": 480,
-            "maximum_price": 1280,
+            "minimum_price": 10,
+            "maximum_price": 700,
             "cheap": {
-                "minimum_price": 130,
-                "maximum_price": 400,
+                "minimum_price": 10,
+                "maximum_price": 700,
             }
         },
         {
             "name": "heroin",
-            "minimum_price": 5500,
-            "maximum_price": 13000,
+            "minimum_price": 0.02,
+            "maximum_price": 3,
             "expensive": {
-                "minimum_price": 12000,
-                "maximum_price": 19000,
+                "minimum_price": 0.02,
+                "maximum_price": 3,
             }
         },
         {
@@ -95,44 +95,44 @@ var DataCenter = {
     cities: [
         {
             "name": "laval",
-            "cops": 200,
-            "min_drugs": 5,
-            "max_drugs": 15
+            "cops": 2000,
+            "min_drugs": 100,
+            "max_drugs": 100
         },
         {
             "name": "mont-royal",
-            "cops": 5,
-            "min_drugs": 7
+            "cops": 1500,
+            "min_drugs": 75
         },
         {
             "name": "lafontaine-park",
-            "cops": 15,
-            "min_drugs": 6
+            "cops": 750,
+            "min_drugs": 50
         },
         {
             "name": "berry-uqam-metro",
-            "cops": 80,
-            "min_drugs": 4
+            "cops": 500,
+            "min_drugs": 25
         },
         {
             "name": "sainte-helene-island",
-            "cops": 30,
-            "min_drugs": 6
+            "cops": 250,
+            "min_drugs": 20
         },
         {
             "name": "vieux-port",
-            "cops": 70,
-            "min_drugs": 4,
-            "max_drugs": 10
+            "cops": 150,
+            "min_drugs": 10,
+            "max_drugs": 20
         },
         {
             "name": "westmount",
-            "cops": 70,
-            "min_drugs": 6
+            "cops": 75,
+            "min_drugs": 10
         },
         {
             "name": "notre-dame-de-grace",
-            "cops": 20,
+            "cops": 50,
             "min_drugs": 5
         },
     ],
