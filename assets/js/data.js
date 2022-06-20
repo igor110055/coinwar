@@ -33,10 +33,10 @@ var DataCenter = {
         },
         {
             "name": "heroin",
-            "minimum_price": 0.02,
+            "minimum_price": 1,
             "maximum_price": 3,
             "expensive": {
-                "minimum_price": 0.02,
+                "minimum_price": 1,
                 "maximum_price": 3,
             }
         },
