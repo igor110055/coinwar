@@ -1,22 +1,33 @@
 var DataCenter = {
     drugs: [
+
         {
-            "name": "heroin",
-            "minimum_price": 1,
-            "maximum_price": 3,
+            "name": "aave",
+            "minimum_price": 28,
+            "maximum_price": 632,
             "expensive": {
-                "minimum_price": 1,
-                "maximum_price": 3,
+                "minimum_price": 28,
+                "maximum_price": 632,
             }
-        },
-        {
-            "name": "pcp",
-            "minimum_price": 1000,
-            "maximum_price": 2500
         },
 
         {
-            "name": "hash",
+            "name": "ada",
+            "minimum_price": 1,
+            "maximum_price": 2,
+            "expensive": {
+                "minimum_price": 1,
+                "maximum_price": 2,
+            }
+        },
+        {
+            "name": "alcx",
+            "minimum_price": 20,
+            "maximum_price": 2004,
+        },
+
+        {
+            "name": "bnb",
             "minimum_price": 10,
             "maximum_price": 700,
             "cheap": {
@@ -26,17 +37,7 @@ var DataCenter = {
         },
 
         {
-            "name": "speed",
-            "minimum_price": 90,
-            "maximum_price": 250,
-            "expensive": {
-                "minimum_price": 2000,
-                "maximum_price": 5000,
-            }
-        },
-
-        {
-            "name": "acid",
+            "name": "btc",
             "minimum_price": 5000,
             "maximum_price": 69000,
             "cheap": {
@@ -50,17 +51,17 @@ var DataCenter = {
         },
 
         {
-            "name": "opium",
-            "minimum_price": 1,
-            "maximum_price": 2,
+            "name": "doge",
+            "minimum_price": 69,
+            "maximum_price": 420,
             "expensive": {
-                "minimum_price": 1,
-                "maximum_price": 2,
+                "minimum_price": 69,
+                "maximum_price": 420,
             }
         },
 
         {
-            "name": "cocaine",
+            "name": "eth",
             "minimum_price": 100,
             "maximum_price": 5000,
             "expensive": {
@@ -70,35 +71,35 @@ var DataCenter = {
         },
 
         {
-            "name": "marijuana",
-            "minimum_price": 315,
-            "maximum_price": 890,
-            "cheap": {
-                "minimum_price": 60,
-                "maximum_price": 220,
-            }
-        },
-
-        {
-            "name": "glue",
+            "name": "dot",
             "minimum_price": 1,
-            "maximum_price": 5,
+            "maximum_price": 54,
             "cheap": {
                 "minimum_price": 1,
-                "maximum_price": 5,
+                "maximum_price": 54,
             }
         },
 
         {
-            "name": "mush",
-            "minimum_price": 630,
-            "maximum_price": 1300
+            "name": "mkr",
+            "minimum_price": 206,
+            "maximum_price": 6012,
+            "cheap": {
+                "minimum_price": 206,
+                "maximum_price": 6012,
+            }
         },
 
         {
-            "name": "ecstasy",
+            "name": "sol",
             "minimum_price": 1,
             "maximum_price": 260,
+        },
+
+        {
+            "name": "uni",
+            "minimum_price": 2,
+            "maximum_price": 43,
         },
 
 
@@ -106,45 +107,45 @@ var DataCenter = {
     cities: [
         {
             "name": "laval",
-            "cops": 2000,
+            "cops": 2000000,
             "min_drugs": 100,
-            "max_drugs": 100
+            "max_drugs": 1000,
         },
         {
             "name": "mont-royal",
-            "cops": 1500,
-            "min_drugs": 75
+            "cops": 7,
+            "min_drugs": 100,
         },
         {
             "name": "lafontaine-park",
-            "cops": 750,
-            "min_drugs": 50
+            "cops": 6,
+            "min_drugs": 100,
         },
         {
             "name": "berry-uqam-metro",
-            "cops": 500,
-            "min_drugs": 25
+            "cops": 5,
+            "min_drugs": 100,
         },
         {
             "name": "sainte-helene-island",
-            "cops": 250,
-            "min_drugs": 20
+            "cops": 4,
+            "min_drugs": 100,
         },
         {
             "name": "vieux-port",
-            "cops": 150,
-            "min_drugs": 10,
-            "max_drugs": 20
+            "cops": 3,
+            "min_drugs": 100,
+            "max_drugs": 100,
         },
         {
             "name": "westmount",
-            "cops": 75,
-            "min_drugs": 10
+            "cops": 2,
+            "min_drugs": 100,
         },
         {
             "name": "notre-dame-de-grace",
-            "cops": 50,
-            "min_drugs": 5
+            "cops": 1,
+            "min_drugs": 100,
         },
     ],
     messages: [

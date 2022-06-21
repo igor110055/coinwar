@@ -55,8 +55,8 @@ function array_sum(array) {
 
 // GameManager
 function GameManager() {
-    this.day = 3;
-    this.end = 69;
+    this.day = 2022;
+    this.end = 2442;
     this.debt = 0;
     this.bank_deposit = 0;
     this.stone_level = 0;
