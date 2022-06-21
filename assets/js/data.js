@@ -1,6 +1,41 @@
 var DataCenter = {
     drugs: [
         {
+            "name": "heroin",
+            "minimum_price": 1,
+            "maximum_price": 3,
+            "expensive": {
+                "minimum_price": 1,
+                "maximum_price": 3,
+            }
+        },
+        {
+            "name": "pcp",
+            "minimum_price": 1000,
+            "maximum_price": 2500
+        },
+
+        {
+            "name": "hash",
+            "minimum_price": 10,
+            "maximum_price": 700,
+            "cheap": {
+                "minimum_price": 10,
+                "maximum_price": 700,
+            }
+        },
+
+        {
+            "name": "speed",
+            "minimum_price": 90,
+            "maximum_price": 250,
+            "expensive": {
+                "minimum_price": 2000,
+                "maximum_price": 5000,
+            }
+        },
+
+        {
             "name": "acid",
             "minimum_price": 5000,
             "maximum_price": 69000,
@@ -13,6 +48,17 @@ var DataCenter = {
                 "maximum_price": 69000,
             }
         },
+
+        {
+            "name": "opium",
+            "minimum_price": 1,
+            "maximum_price": 2,
+            "expensive": {
+                "minimum_price": 1,
+                "maximum_price": 2,
+            }
+        },
+
         {
             "name": "cocaine",
             "minimum_price": 100,
@@ -22,66 +68,7 @@ var DataCenter = {
                 "maximum_price": 5000,
             }
         },
-        {
-            "name": "hash",
-            "minimum_price": 10,
-            "maximum_price": 700,
-            "cheap": {
-                "minimum_price": 10,
-                "maximum_price": 700,
-            }
-        },
-        {
-            "name": "heroin",
-            "minimum_price": 1,
-            "maximum_price": 3,
-            "expensive": {
-                "minimum_price": 1,
-                "maximum_price": 3,
-            }
-        },
-        {
-            "name": "glue",
-            "minimum_price": 11,
-            "maximum_price": 75,
-            "cheap": {
-                "minimum_price": 2,
-                "maximum_price": 15,
-            }
-        },
-        {
-            "name": "ecstasy",
-            "minimum_price": 1500,
-            "maximum_price": 4400
-        },
-        {
-            "name": "opium",
-            "minimum_price": 540,
-            "maximum_price": 1250,
-            "expensive": {
-                "minimum_price": 34000,
-                "maximum_price": 68000,
-            }
-        },
-        {
-            "name": "pcp",
-            "minimum_price": 1000,
-            "maximum_price": 2500
-        },
-        {
-            "name": "mush",
-            "minimum_price": 630,
-            "maximum_price": 1300
-        },
-        {
-            "name": "speed",
-            "minimum_price": 90,
-            "maximum_price": 250,
-            "expensive": {
-                "minimum_price": 2000,
-                "maximum_price": 5000,
-            }
-        },
+
         {
             "name": "marijuana",
             "minimum_price": 315,
@@ -91,6 +78,30 @@ var DataCenter = {
                 "maximum_price": 220,
             }
         },
+
+        {
+            "name": "glue",
+            "minimum_price": 1,
+            "maximum_price": 5,
+            "cheap": {
+                "minimum_price": 1,
+                "maximum_price": 5,
+            }
+        },
+
+        {
+            "name": "mush",
+            "minimum_price": 630,
+            "maximum_price": 1300
+        },
+
+        {
+            "name": "ecstasy",
+            "minimum_price": 1,
+            "maximum_price": 260,
+        },
+
+
     ],
     cities: [
         {
