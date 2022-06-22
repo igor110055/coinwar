@@ -15,102 +15,81 @@
 
 <body>
     <div class="container" style="width: 100%; padding: 0">
-        <!--  
+
         <nav class="navbar navbar-inverse" role="navigation">
-            
+
             <div class="navbar-header">
-            
+                <span class="navbar-brand visible-xs xs-stats">
+                    DAI : $<span class="cash"></span></span>
                 <div class="btn-group navbar-move visible-xs">
                     <a type="button" class="btn btn-default" data-toggle="modal" href="#modal-about"><i
-                            class=""></i><span>CRYPTOWARZ</span></a>
-                      
+                            class=""></i><span>THE COIN WAR</span></a>
+                    <!--
                     <button type="button" class="btn dropdown-toggle" data-toggle="collapse"
                         data-target=".navbar-collapse">
                         <span class="caret"></span>
                     </button>
-                     -->
-    </div>
-    </div>
-    <div class="collapse navbar-collapse">
-        <ul class="nav navbar-nav">
-            <li class="dropdown">
-                <!--
-                    <li><a class="new-game" href="#" data-l10n-id="new-game"></a></li>
-                    <li><a class="new-name" href="#" data-l10n-id="change-name"></a></li>
-                    <li><a href="#modal-high-score" data-toggle="modal" data-l10n-id="high-score"></a></li>
-                    <li class="hidden-xs"><a data-toggle="modal" href="#modal-cities"><i class=""></i> <span
-                                data-l10n-id="move"></span></a></li>
-                    <li><a data-toggle="modal" href="#modal-pawn-shop"><i class=""></i> <span
-                                data-l10n-id="pawn-shop"></span></a></li>
-                                                    <li class="hidden-xs"><a class="stats_toggle" href="#"><i class=""></i>
-                            <span data-l10n-id="stats"></span></a></li>
-                              
-                    <li><a data-toggle="modal" href="#modal-inventory"><i class=""></i>
-                            <span data-l10n-id="inventory"></span></a></li>
-                    -->
-        </ul>
-        </li>
-        </ul>
-    </div>
-    </nav>
-    <!-- Header -->
-    <div class="col-md-6 col-md-offset-1">
-        <h2 class="visible-xs xs-stats">
-            EXCHANGE : <a type="button" class="btn btn-default" data-toggle="modal" href="#modal-cities"><i
-                    class=""></i>
-                <span class="city"></span></a>
-            <br />
-            YEAR : <span class="day"></span>
-            <br />
-            DAI : $<span class="cash"></span>
-        </h2>
+                -->
+                </div>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <span class="navbar-brand hidden-xs xs-stats">
+                        DAI : $<span class="cash"></span>
+                    </span>
+                </ul>
+            </div>
+        </nav>
+        <!-- Header -->
+        <div class="col-md-6 col-md-offset-1">
+            <h2 class="visible-xs xs-stats">
+                EXCHANGE : <a type="button" class="btn btn-default" data-toggle="modal" href="#modal-cities"><i
+                        class=""></i>
+                    <span class="city"></span></a>
+            </h2>
 
-        <h2 class="hidden-xs xs-stats">
-            EXCHANGE : <a type="button" class="btn btn-default" data-toggle="modal" href="#modal-cities"><i
-                    class=""></i>
-                <span class="city"></span></a>
-            <br />
-            YEAR : <span class="day"></span>
-            <br />
-            DAI : $<span class="cash"></span>
-        </h2>
+            <h2 class="hidden-xs xs-stats">
+                EXCHANGE : <a type="button" class="btn btn-default" data-toggle="modal" href="#modal-cities"><i
+                        class=""></i>
+                    <span class="city"></span></a>
+            </h2>
 
-        <!-- Assets -->
-        <table class="table table-condensed drugs">
-            <tbody>
-                <tr>
-                    <th><span data-l10n-id="item"></span></th>
-                    <th class="text-center"><span data-l10n-id="stock"></span></th>
-                    <th class="text-center"><span data-l10n-id="value"></span></th>
-                    <th class="text-center"><i class=""></i></th>
-                </tr>
-                <tr data-drug="0">
-                    <td></td>
-                    <td class="text-center"></td>
-                    <td class="text-center"></td>
-                    <!-- Wide -->
-                    <td class="hidden-xs">
-                        <button data-toggle="modal" class="btn buy-xs" href="#modal-transaction">
-                            <span data-l10n-id="buy"></span>
-                        </button>
-                        <button data-toggle="modal" class="btn sell-xs" href="#modal-transaction">
-                            <span data-l10n-id="sell"></span>
-                        </button>
-                    </td>
-                    <!-- Narrow -->
-                    <td class="visible-xs">
-                        <button data-toggle="modal" class="btn buy-xs" href="#modal-transaction">
-                            <span data-l10n-id="buy"></span>
-                        </button>
+            <!-- Assets -->
+            <table class="table table-condensed drugs">
+                <tbody>
+                    <tr>
+                        <th><span data-l10n-id="item"></span></th>
+                        <th class="text-center"><span data-l10n-id="stock"></span></th>
+                        <th class="text-center"><span data-l10n-id="value"></span></th>
+                        <th class="text-center"><i class=""></i></th>
+                    </tr>
+                    <tr data-drug="0">
+                        <td></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <!-- Wide -->
+                        <td class="hidden-xs">
+                            <button data-toggle="modal" class="btn buy-xs" href="#modal-transaction">
+                                <span data-l10n-id="buy"></span>
+                            </button>
+                            <button data-toggle="modal" class="btn sell-xs" href="#modal-transaction">
+                                <span data-l10n-id="sell"></span>
+                            </button>
+                        </td>
+                        <!-- Narrow -->
+                        <td class="visible-xs">
+                            <button data-toggle="modal" class="btn buy-xs" href="#modal-transaction">
+                                <span data-l10n-id="buy"></span>
+                            </button>
 
-                        <button data-toggle="modal" class="btn sell-xs" href="#modal-transaction">
-                            <span data-l10n-id="sell"></span>
-                        </button>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <!--
+                            <button data-toggle="modal" class="btn sell-xs" href="#modal-transaction">
+                                <span data-l10n-id="sell"></span>
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <!--
             <div class="col-md-4 news visible-xs">
                 <ul>
                 </ul>
@@ -121,7 +100,7 @@
                 </ul>
             </div>
         -->
-    </div>
+        </div>
     </div>
 
     <!-- Modal : Transaction -->
@@ -186,8 +165,9 @@
                     <p>
                         <a href="https://en.wikipedia.org/wiki/Drug_Wars_(video_game)"
                             data-l10n-id="about-attribution"></a><br />
-                        <a href="privacy-policy.html" data-l10n-id="about-privacy-policy"></a><br />
-                        <a href="https://github.com/316k/DopeWars.js" data-l10n-id="about-glyphicons"></a>
+                        <a href="https://github.com/316k/DopeWars.js" data-l10n-id="about-privacy-policy"></a>
+                        <a href="https://en.wikipedia.org/wiki/Drug_Wars_(video_game)"
+                            data-l10n-id="about-glyphicons"></a>
                     </p>
                 </div>
                 <div class="modal-footer">
