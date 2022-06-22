@@ -127,7 +127,7 @@ function Coat() {
     this.cash = 1983;
     this.guns = [];
     this.health = 100;
-    this.total_space = 999999999999;
+    this.total_space = 999999999999999999999999999999999999;
 }
 
 Coat.prototype.available_space = function () {
