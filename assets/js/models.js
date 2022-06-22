@@ -184,7 +184,7 @@ Coat.prototype.score = function (game, prices) {
 // City
 function City(number, news_manager) {
     this.city_name = navigator.mozL10n.get('city-' + DataCenter.cities[number].name);
-    this.is_cop = Math.random() * 100 < DataCenter.cities[number].cops;
+    this.is_cop = Math.random() * 100000 < DataCenter.cities[number].cops;
     this.prices = [];
     this.number = number;
     this.available_drugs = [];
